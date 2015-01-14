@@ -1,11 +1,9 @@
-require 'formula'
-
 class Libpqxx3 < Formula
-  homepage 'http://pqxx.org/development/libpqxx/'
-  url 'http://pqxx.org/download/software/libpqxx/libpqxx-3.1.1.tar.gz'
-  sha1 'b8942164495310894cab39e5882c42f092570fc5'
+  homepage "http://pqxx.org/development/libpqxx/"
+  url "http://pqxx.org/download/software/libpqxx/libpqxx-3.1.1.tar.gz"
+  sha1 "b8942164495310894cab39e5882c42f092570fc5"
 
-  depends_on 'pkg-config' => :build
+  depends_on "pkg-config" => :build
   depends_on :postgresql
 
   # Patch 1 borrowed from MacPorts. See:
